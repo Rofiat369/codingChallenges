@@ -13,3 +13,9 @@ alert(admin);
 
 const planetName = "earth";
 let currentVisitorName = "name";
+
+// Write a function that returns true if the parameter age is greater than 18. Otherwise it asks for a confirmation and returns its result.
+
+function checkAge(age){
+ return (age > 18) ? true : 'Did parents allow you?'
+}
