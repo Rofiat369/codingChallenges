@@ -23,3 +23,11 @@ function checkAge(age){
 function checkAge(age){
     return (age > 18) || confirm("Did parents allow you?")
 }
+
+// Write a function min(a,b) which returns the least of two numbers a and b.
+
+function returnMin(a, b){
+return (a < b) ? a : b
+}
+
+console.log(returnMin (4, 9))
