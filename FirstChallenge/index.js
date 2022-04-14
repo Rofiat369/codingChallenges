@@ -31,3 +31,11 @@ return (a < b) ? a : b
 }
 
 console.log(returnMin (4, 9))
+
+// function that returns a the function yes or no based on user agreement to question
+let ask = (question, yes, no) => confirm(question)? yes() : no();
+  ask(
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You canceled the execution.")
+  );
