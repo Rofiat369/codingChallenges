@@ -42,12 +42,26 @@ while (num <= 100 && num) {
 
 let userInput = prompt("enter a num");
 for (let i = 1; i < 13; ++i) {
-    if(userInput > 1 && userInput < 10){
-        document.write(
-            userInput + " " + "*" + " " + i + " " + "=" + " " + userInput * i + "<br>"
-          );
-    } else {
-        document.write("<h4> please enter a number between 2 - 9 </h4>")
-    }
- 
+  if (userInput > 1 && userInput < 10) {
+    document.write(
+      userInput + " " + "*" + " " + i + " " + "=" + " " + userInput * i + "<br>"
+    );
+  } else {
+    document.write("<h4> please enter a number between 2 - 9 </h4>");
+  }
+}
+
+//Write a program that plays "neither yes, nor no" with the user. 
+//Specifically, the programs asks the user to enter text until either "yes" or "no" is typed, which ends the game.
+
+let question = prompt("Are you good?");
+let y = "yes";
+let n = "no";
+
+while(question === true){
+  if(question !== y || question !== n){
+    question = prompt("Are you good?");
+  } else {
+    break;
+  }
 }
