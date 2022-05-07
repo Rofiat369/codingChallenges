@@ -6,7 +6,7 @@
 // days [dayIndex + 1]
 
 document.querySelector(".entered").addEventListener("click", (e) => {
-  let inputs = document.querySelector(".word").value;
+  let inputs = document.querySelector(".word").value.toLowerCase();
   console.log(inputs);
 });
 
